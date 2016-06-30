@@ -1,0 +1,78 @@
+/**
+ * Css Reset
+ * Author: Z.Ch.
+ * Version: 1.0.2.10
+ */
+
+html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6 {
+	margin: 0; 
+	padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+fieldset, img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+/*
+:focus {
+	outline: none;
+}*/
+
+a {
+    text-decoration: none;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+}
+
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary { 
+    display: block;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '\0020';
+    content: none;
+}
+
+audio, canvas, video {
+   display: inline-block;
+   *display: inline; 
+   *zoom: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix {
+    *zoom: 1
+}
+.clearfix:before, .clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "\0020"
+}
+.clearfix:after {
+    clear: both
+}

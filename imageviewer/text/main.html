@@ -1,0 +1,30 @@
+<div class="img_list">
+
+	{= var lastTag = null; =}
+	{= var picCount = 0; =}
+	{= _.each(imgList, function(pic, index) { =}
+	{= if (lastTag != pic.tag) { =}
+		
+	{= if (index != 0 ) { =}		
+	</div>
+	{= } =}
+
+	<div class="img_group clearfix">
+	
+		<div class="img_tag">
+			{{pic.tag}}
+		</div>
+	{= lastTag = pic.tag; =}
+	{= picCount = 0; } =}
+	
+		{= if (picCount < 9) { =}
+		<a class="pic" href="#" data-idx="{{pic.idx}}">
+			<img lazy_src='{{pic.thumbnail}}' src="http://simg1.qunarzz.com/site/images/wap/touch/images/img_default_black_small.png" title="{{pic.title}}"/>
+		</a>
+		{= picCount ++; } =}
+
+	{= }); =}
+	</div>
+
+</div>
+

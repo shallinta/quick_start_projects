@@ -1,0 +1,14 @@
+<div class="img_full">
+	<ul>
+		{= _.each(list, function(image, idx) { =}
+		<li>
+			<img src="{{image.src}}" title="{{title}}">
+		</li>
+		{= }); =}
+	</ul>
+	<div class="img_info">
+		<span class="title">{{title}}</span>
+		<span class="page">{{page}}</span>
+		/ {{length}}
+	</div>
+</div>

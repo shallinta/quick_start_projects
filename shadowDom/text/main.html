@@ -1,0 +1,33 @@
+<h1>Shodow DOM</h1>
+
+<div class="day">
+	<p class="light">白天灯关闭</p>
+</div>
+<div class="night">
+	<p class="light">晚上灯开启</p>
+</div>
+
+<div class="separator"></div>
+<footer class="footer">
+	<r class="author">{{author}}</r>
+	<span>{{date}}</span>
+</footer>
+
+<template class="tpl-footer">
+	By <a href=""><content select=".author"></content></a>
+	&copy; <content select=""></content>
+</template>
+
+<template class="tpl-lights">
+	<style>
+		:host-context(.day) {
+			color: #fff;
+			background: #000;
+		}
+		:host-context(.night) {
+			color: #333;
+			background: #ecf902;
+		}
+	</style>
+	<content></content>
+</template>

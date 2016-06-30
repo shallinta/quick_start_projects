@@ -1,0 +1,39 @@
+/**
+ * demo style
+ */
+
+body {
+	padding: 0 30px;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 32px;
+	margin: 20px 0;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+strong {
+	color: #f33;
+}
+
+.list {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.question {
+	width: 180px;
+	padding: 10px;
+	margin: 5px;
+	/*border: 1px solid #ccc;*/
+	/*border-radius: 4px;*/
+	box-shadow: 2px 2px 8px #666;
+}
+
+footer {
+	padding-bottom: 20px;
+}

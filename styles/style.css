@@ -1,0 +1,34 @@
+/**
+ * Uniform styles
+ * Author: Z.Ch.
+ * Version: 1.0.7.16
+ */
+
+body {
+	font: 12px/1.5 'Arial','Helvetica','sans-serif','Microsoft Yahei';
+	color: #333;
+}
+
+a {
+	color: #317ef3;
+}
+
+a:visited {
+	color: #317ef3;
+}
+
+a:hover {
+	color: #e53960;
+}
+
+.separator {
+	height: 1px;
+	width: 100%;
+	margin-top: 40px;
+	background: #ccc;
+}
+
+footer {
+	margin-top: 20px;
+	text-align: right;
+}

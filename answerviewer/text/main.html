@@ -1,0 +1,48 @@
+<h1>Call Center Exam Preview</h1>
+
+<div class="list">
+{= _.each(data, function (val, idx) { =}
+	<div class="question">
+		{= if (val.type.indexOf("选") >= 0) { =}
+			{= val.question = val.question.replace(/[_]+|（.*）/, "<strong> ( "+val.answer+" ) </strong>"); =}
+			<h2>{{idx+1}}. ({{val.type}}) {{val.question}}</h2>
+		{= } else { =}
+			<h2>{{idx+1}}. ({{val.type}}) {{val.question}}</h2>
+			<p><strong>答案：{{val.answer}}</strong></p>
+		{= } =}
+		{= if (val.optionA) { =}
+			{= if(val.answer.indexOf('A') >= 0) { =}
+				<p><strong>A. {{val.optionA}}</strong></p>
+			{= } else { =}
+				<p>A. {{val.optionA}}</p>
+			{= } =}
+		{= } =}
+		{= if (val.optionB) { =}
+			{= if(val.answer.indexOf('B') >= 0) { =}
+				<p><strong>B. {{val.optionB}}</strong></p>
+			{= } else { =}
+				<p>B. {{val.optionB}}</p>
+			{= } =}
+		{= } =}
+		{= if (val.optionC) { =}
+			{= if(val.answer.indexOf('C') >= 0) { =}
+				<p><strong>C. {{val.optionC}}</strong></p>
+			{= } else { =}
+				<p>C. {{val.optionC}}</p>
+			{= } =}
+		{= } =}
+		{= if (val.optionD) { =}
+			{= if(val.answer.indexOf('D') >= 0) { =}
+				<p><strong>D. {{val.optionD}}</strong></p>
+			{= } else { =}
+				<p>D. {{val.optionD}}</p>
+			{= } =}
+		{= } =}
+	</div>
+{= }); =}
+</div>
+
+<div class="separator"></div>
+<footer>
+	By <a href="{{email}}">{{author}}</a> &copy; {{date}}
+</footer>

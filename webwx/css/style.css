@@ -1,0 +1,478 @@
+/**
+ * web wenxin style
+ */
+html, body {
+	height: 100%;
+	font-size: 14px;
+}
+
+body {
+	position: relative;
+	background: url(/webwx/img/1.png) 100%;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.main {
+	width: 100%;
+	max-width: 1000px;
+	min-width: 800px;
+	height: 100%;
+	max-height: 800px;
+	min-height: 600px;
+	margin: auto;
+	overflow: hidden;
+	background: #eee;
+}
+
+/** panel 部分 */
+
+.panel {
+	float: left;
+	width: 280px;
+	height: 100%;
+	background: #2e3238;
+}
+
+.menuBar {
+	padding: 18px;
+}
+
+.menuBar img {
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.menuBar h2 {
+	display: inline-block;
+	margin-left: 10px;
+	line-height: 40px;
+	color: #fff;
+}
+
+.menuBar .menu {
+	float: right;
+	width: 40px;
+	height: 20px;
+	margin-top: 10px;
+	border: 2px solid #9fc;
+	background: #f36;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+}
+
+.tabBar {
+	padding: 10px 0;
+	border-top: 1px solid #24272c;
+	border-bottom: 1px solid #24272c;
+	overflow: hidden;
+}
+
+.tabWraper {
+	width: 281px;
+}
+
+.tab {
+	float: left;
+	width: 140px;
+	height: 20px;
+	border-right: 1px solid #24272c;
+	text-align: center;
+}
+
+.tab a {
+	color: #fff;
+}
+
+.tab.active a {
+	color: #3f0;
+}
+
+.msgBox {
+	min-height: 480px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.msg {
+	position: relative;
+	height: 64px;
+	padding: 12px 18px;
+	border-bottom: 1px solid #292c33;
+	font-size: 13px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.msg img {
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 2px;
+}
+
+.msg h4, .msg p {
+	display: inline-block;
+	width: 150px;
+	margin: 2px 0 0 10px;
+	line-height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+
+.msg p {
+	margin: -5px 0 0 10px;
+	color: #989898;
+}
+
+.msg .ext {
+	float: right;
+	width: 40px;
+	height: 40px;
+	text-align: right;
+}
+
+.msg .ext span {
+	height: 20px;
+	color: #6b6f7c;
+}
+
+.newMsg {
+	position: absolute;
+	top: 8px;
+	left: 54px;
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	background: #f00;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+
+.msg.active {
+	background: #3a3f45;
+}
+
+.msg.active p, .msg.active .ext span {
+	color: #fff;
+}
+
+.msg.active .newMsg {
+	display: none;
+}
+
+.contact {
+	padding: 10px 18px;
+	border-bottom: 1px solid #292c33;
+	cursor: pointer;
+}
+
+.contact.group {
+	padding: 0;
+}
+
+.contact h3 {
+	padding-left: 18px;
+	font-size: 14px;
+	color: #787b87;
+	background: #292d32;
+
+}
+
+.contact img {
+	float: left;
+	width: 30px;
+	height: 30px;
+	border-radius: 2px;
+}
+
+.contact h4 {
+	margin-left: 40px;
+	line-height: 30px;
+	font-size: 13px;
+	color: #fff;
+}
+
+.contact.active {
+	background: #3a3f45;
+}
+
+
+/** dialog 部分 */
+
+.dialog {
+	position: relative;
+	height: 100%;
+	margin-left: 280px;
+}
+
+.chatTitleBox {
+	height: 50px;
+	margin: 0 19px;
+	padding: 10px 0;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.chatTitle {
+	height: 25px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.chatContentBox {
+	position: absolute;
+	top: 51px;
+	bottom: 181px;
+	left: 0px;
+	right: 0px;
+	padding: 0 19px;
+	overflow-y: auto;
+}
+
+.chatMsgBox {
+	line-height: 1.6;
+}
+
+.chatMsgBox .time {
+	text-align: center;
+	margin: 10px auto;
+}
+
+.chatMsgBox .time span {
+	display: inline-block;
+	padding: 1px 18px;
+	border-radius: 2px;
+	font-size: 12px;
+	color: #fff;
+	background: #dcdcdc;
+}
+
+.chatMsgBox .icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.chatMsgBox .nickname {
+	font-size: 12px;
+	color: #4f4f4f;
+}
+
+.chatMsgBox .content {
+	position: relative;
+	max-width: 500px;
+	min-height: 1em;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 9px 13px;
+	border-radius: 3px;
+	vertical-align: top;
+	text-align: left;
+	font-size: 14px;
+	word-wrap: break-word;
+	word-break: break-all;
+	background: #fff;
+}
+
+.chatMsgBox .content::after {
+	content: ' ';
+	position: absolute;
+	top: 14px;
+	border: 6px solid transparent;
+}
+
+.chatMsgRight, .chatMsgLeft {
+	clear: both;
+	margin-bottom: 16px;
+}
+
+.chatMsgRight .icon {
+	float: right;
+}
+
+.chatMsgLeft .icon {
+	float: left;
+}
+
+.chatMsgRight .nickname {
+	display: none;
+}
+
+.chatMsgLeft .nickname {
+	margin-left: 40px;
+	padding-left: 10px;
+}
+
+.chatMsgRight .content {
+	float: right;
+}
+
+.chatMsgLeft .content::after {
+	border-right: 4px solid #fff;
+	right: 100%;
+}
+
+.chatMsgRight .content::after {
+	border-left: 4px solid #fff;
+	left: 100%;
+}
+
+.chatEmpty {
+	margin-top: 130px;
+	text-align: center;
+	font-size: 13px;
+	color: #ccc;
+}
+
+.chatContactInfo {
+	padding: 80px 0;
+	text-align: center;
+}
+
+.chatContactInfo .avatar img{
+	width: 120px;
+	height: 120px;
+	border-radius: 6px;
+}
+
+.chatContactInfo .avatar h1 {
+	margin-top: 20px;
+	font-size: 24px;
+}
+
+.chatContactInfo .info {
+	margin-top: 40px;
+	font-size: 12px;
+	color: #888;
+}
+
+.chatContactInfo .action {
+	margin-top: 30px;
+}
+
+.chatContactInfo .action a {
+	display: inline-block;
+	padding: 10px 80px;
+	font-size: 14px;
+	color: #fff;
+	background: #42ac3e;
+}
+
+
+.chatInputBox {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 180px;
+	margin-right: 19px;
+	padding-left: 19px;
+	border-top: 1px solid #d6d6d6;
+}
+
+.chatInput {
+	height: 7.5em;
+	margin: 20px 0 10px;
+	padding: 0 10px;
+	overflow-y: auto;
+	white-space: pre-wrap;
+	word-break: initial;
+}
+
+.chatSend {
+	margin-top: 5px;
+	text-align: right;
+}
+
+.chatSend span {
+	margin: 0 8px 0 12px;
+	font-size: 12px;
+	color: #888;
+}
+
+/** popup 部分 */
+
+.popProfile {
+	position: absolute;
+	z-index: 999;
+	background: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, .1) 0 5px 10px;
+}
+
+.popProfile img {
+	width: 220px;
+	height: 220px;
+}
+
+.popProfile .info {
+	padding: 20px;
+	min-height: 34px;
+}
+
+.popProfile .sendMsg {
+	float: right;
+	width: 24px;
+	height: 24px;
+	border: 2px solid #fac;
+	border-radius: 2px;
+	background: #faf;
+}
+
+.popProfile h2 {
+	margin-bottom: 8px;
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+.popProfile p {
+	width: 105px;
+	margin: 0;
+	font-size: 12px;
+	color: #888;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+
+
+
+/** common 部分 */
+
+.hide {
+	display: none;
+}
+
+.btn {
+	display: inline-block;
+	padding: 3px 20px;
+	border: 1px solid #c1c1c1;
+	border-radius: 4px;
+	font-size: 14px;
+	color: #333;
+}
+
+.btn-send {
+	background: #fff;
+	padding: 3px 30px;
+}
+
+.btn-send:hover {
+	background: #f8f8f8;
+	color: #333;
+}
